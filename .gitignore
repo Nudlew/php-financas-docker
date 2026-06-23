@@ -1,0 +1,8 @@
+/vendor/
+/.env
+.env.*
+!.env.homolog.example
+!.env.prod.example
+docker-compose.override.yml
+*.log
+.DS_Store
