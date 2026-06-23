@@ -1,10 +1,9 @@
 #!/bin/bash
 set -e
 
-echo "Atualizando ambiente de produção..."
-
+echo "Atualizando produção..."
 git pull
-docker-compose --env-file .env.prod -f docker-compose.prod.yml up -d --build
-docker-compose --env-file .env.prod -f docker-compose.prod.yml exec -T app composer install
-
-echo "Produção atualizada com sucesso."
+docker-compose -p financas_prod --env-file .env.prod -f docker-compose.prod.yml up -d --build
+docker-compose -p financas_prod --env-file .env.prod -f docker-compose.prod.yml exec -T app composer install
+./aplicar-migrations-producao.sh
+echo "Produção atualizada."

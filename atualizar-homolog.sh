@@ -1,10 +1,9 @@
 #!/bin/bash
 set -e
 
-echo "Atualizando ambiente de homologação..."
-
+echo "Atualizando homologação..."
 git pull
-docker-compose --env-file .env.homolog -f docker-compose.homolog.yml up -d --build
-docker-compose --env-file .env.homolog -f docker-compose.homolog.yml exec -T app composer install
-
-echo "Homologação atualizada com sucesso."
+docker-compose -p financas_homolog --env-file .env.homolog -f docker-compose.homolog.yml up -d --build
+docker-compose -p financas_homolog --env-file .env.homolog -f docker-compose.homolog.yml exec -T app composer install
+./aplicar-migrations-homolog.sh
+echo "Homologação atualizada."
