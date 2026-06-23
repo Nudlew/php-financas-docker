@@ -1,4 +1,4 @@
-/vendor/
+/app/vendor/
 /.env
 .env.*
 !.env.homolog.example
