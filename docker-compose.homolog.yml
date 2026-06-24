@@ -22,8 +22,6 @@ services:
       SMTP_FROM_EMAIL: ${SMTP_FROM_EMAIL}
       SMTP_FROM_NAME: ${SMTP_FROM_NAME}
       MAIL_TO: ${MAIL_TO}
-    volumes:
-      - ./app:/var/www/html
 
   db:
     image: postgres:15

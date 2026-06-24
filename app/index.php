@@ -233,7 +233,7 @@ $queryString = http_build_query([
 <div class="container">
 
     <div class="card">
-        <h1>CRUD de Lançamentos</h1>
+        <h1>CRUD do Natan Lançamentos</h1>
         <p>Cadastro, edição, exclusão, listagem e filtro de lançamentos.</p>
     </div>
 
