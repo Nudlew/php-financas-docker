@@ -37,6 +37,7 @@ services:
     volumes:
       - postgres_data_homolog:/var/lib/postgresql/data
       - ./db/init:/docker-entrypoint-initdb.d
+      - ./reports:/var/www/html/reports
 
 volumes:
   postgres_data_homolog:
