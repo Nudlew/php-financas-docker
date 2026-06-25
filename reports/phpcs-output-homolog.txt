@@ -1,0 +1,17 @@
+
+FILE: /var/www/html/src/TesteQualidadeDemo.php
+--------------------------------------------------------------------------------
+FOUND 5 ERRORS AFFECTING 4 LINES
+--------------------------------------------------------------------------------
+ 5 | ERROR | [x] Opening brace of a class must be on the line after the
+   |       |     definition
+ 6 | ERROR | [x] Line indented incorrectly; expected 4 spaces, found 0
+ 6 | ERROR | [x] Opening brace should be on a new line
+ 7 | ERROR | [x] Line indented incorrectly; expected at least 8 spaces, found 0
+ 8 | ERROR | [x] Line indented incorrectly; expected 4 spaces, found 0
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 5 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+Time: 271ms; Memory: 10MB
+

@@ -5,7 +5,7 @@ Configuration: /var/www/html/phpunit.xml
 
 ....................                                              20 / 20 (100%)
 
-Time: 00:00.012, Memory: 10.00 MB
+Time: 00:00.013, Memory: 10.00 MB
 
 Email Lancamento Formatter (Tests\EmailLancamentoFormatter)
  ✔ Assunto inclusao correto
